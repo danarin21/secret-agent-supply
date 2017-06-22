@@ -1,0 +1,182 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;    /*  =1 rem  */
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+/* Header Container */
+
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+header img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+.head-container .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem .5em;
+}
+
+.container {
+  max-width: 960px;  /* restricts to 960px*/
+  margin: 0 auto;
+}
+
+/* Main Container */
+
+.main-container {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-block {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: normal;
+  padding-top: .25rem;
+}
+
+nav {
+  background-color: firebrick;
+  color: white;
+  margin-top: 10.8rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: .75rem 0;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.small-screen {
+  display: none;
+}
+
+/* Store Container */
+
+.flex-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0 0 0;
+}
+
+.product-tile {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.product-tile span {
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5rem;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 4rem 0;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+}
+
+footer p {
+  text-align: left;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  .full-width {
+    width: 100%;
+    justify-content: center;
+  }
+
+  li.small-screen {
+    display: inline;
+    justify-content: center;
+  }
+
+  li {
+    display: none;
+  }
+
+  .flex-items {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 16rem;
+  }
+
+  .product-tile {
+    width: 47%;
+  }
+}
