@@ -28,7 +28,7 @@ header img {
 .head-container .container {
   display: flex;
   align-items: center;
-  padding: .66rem 0 .66rem .5em;
+  padding: .5rem 0 .66rem .5em;
 }
 
 .container {
@@ -153,7 +153,7 @@ footer p {
   text-align: left;
 }
 
-/* Media Queries */
+/* Tablet Media Query */
 
 @media only screen and (max-width: 1024px) {
   .full-width {
@@ -179,4 +179,57 @@ footer p {
   .product-tile {
     width: 47%;
   }
+}
+
+/* Mobile Media Query */
+
+@media only screen and (max-width: 470px) {
+  .header-block {
+    width: 100%;
+    top: 15.2rem;
+    padding: 1rem 2rem;
+    }
+
+    .header-block h3 {
+      font-size: .77rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    nav {
+      margin-top: 15.2rem;
+    }
+
+    .flex-items {
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: center;
+    }
+
+    .product-tile {
+      width: 90%;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info {
+      width: 90%;
+      padding-top: .5rem;
+    }
+
+    .info p {
+      display: inline;
+    }
+
+    footer p {
+      text-align: center;
+    }
 }
